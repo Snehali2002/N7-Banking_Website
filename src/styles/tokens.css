@@ -1,0 +1,53 @@
+/* ============================================================
+   N7 — Design Tokens
+   Extracted from Figma "Frame 74" (1440px desktop reference)
+   ============================================================ */
+
+:root {
+  /* ---- Color ---- */
+  --c-bg:            #000d12;  /* rgb(0,13,18)   page dark */
+  --c-bg-2:          #01141b;  /* rgb(1,20,27)   card dark */
+  --c-bg-inner:      #07193c;  /* rgb(7,25,60)   inset blue panel */
+  --c-bg-light:      #e9f4f9;  /* rgb(233,244,249) light section */
+  --c-band-from:     #031e2a;  /* CTA band gradient start */
+  --c-band-to:       #000d12;
+
+  --c-ink:           #e9f4f9;  /* primary text on dark */
+  --c-ink-dark:      #000d12;  /* primary text on light */
+  --c-watermark:     #06212c;  /* ghost letters on dark bg */
+
+  --c-accent:        #00b4fd;  /* rgb(0,180,253) */
+  --c-accent-2:      #003ace;  /* rgb(0,58,206)  */
+  --grad-accent:     linear-gradient(106.53deg, #00B4FD -5.68%, #003ACE 86.98%);
+  --grad-check:      linear-gradient(180deg, #00b4fd 0%, #003ace 82%);
+  --grad-band:       linear-gradient(105deg, #031e2a 0%, #000d12 63%);
+  --grad-glow:       linear-gradient(180deg, #00b4fd 0%, #003ace 100%);
+
+  --c-meta:          #2490bb;  /* rgb(36,144,187) "getting started" */
+  --c-byline:        #64a8c4;  /* rgb(100,168,196) author / date */
+  --c-logo:          #586e84;  /* rgb(88,110,132) trusted-by */
+
+  /* ---- Type ---- */
+  --f-sans: "Archivo", system-ui, -apple-system, sans-serif;
+  --f-mono: "Chivo Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* fluid display sizes (clamp: min @ ~375px, max @ 1440px) */
+  --t-hero:    clamp(40px, 1.6rem + 3.6vw, 67px);
+  --t-h2:      clamp(31px, 1.4rem + 2.4vw, 53px);
+  --t-h3:      clamp(28px, 1.6rem + 1.1vw, 37px);
+  --t-card:    clamp(20px, 1.1rem + 0.5vw, 27px);
+  --t-sol:     22px;
+  --t-body:    16px;
+  --t-label:   15px;
+  --t-small:   14px;
+
+  /* ---- Layout ---- */
+  --pad-x: clamp(20px, 5.5vw, 80px);
+  --maxw: 1440px;
+  --contentw: 1280px;
+  --radius-btn: 10px;
+  --radius-card: 18px;
+  --radius-band: 27px;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
